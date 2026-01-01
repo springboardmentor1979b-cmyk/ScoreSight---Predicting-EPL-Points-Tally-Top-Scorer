@@ -205,3 +205,4 @@ st.markdown(
     "<div class='footer'>EPL Analytics Project</div>",
     unsafe_allow_html=True
 )
+
