@@ -1,1 +1,34 @@
-hello
+
+# 🏆 Week 4 – EPL Player Stats Scaling & Visualization
+
+This week focuses on **scaling player statistics** and visualizing the data to better understand distributions and relationships between key metrics. The dataset used is the cleaned EPL player dataset from **Week 2**.
+
+---
+
+## 📂 Files
+
+* `dataset - 2020-09-24.csv` – Raw dataset from Google Drive
+* `minmax_scaled_epl.csv` – Dataset scaled using **Min-Max Scaler**
+* `standard_scaled_epl.csv` – Dataset scaled using **Standard Scaler**
+* `week3_scaling.ipynb` – Jupyter/Colab notebook containing preprocessing, scaling, and visualization steps
+
+---
+
+## 📝 Objectives
+
+1. 🔹 Load the **EPL player dataset**.
+2. 🔹 Check for missing values in key columns (`Goals`, `Appearances`, `Passes`).
+3. 🔹 Apply **Min-Max Scaling** to normalize the range of features between 0 and 1.
+4. 🔹 Apply **Standard Scaling** to standardize features with mean = 0 and standard deviation = 1.
+5. 🔹 Visualize the relationship between `Appearances` and `Goals` before and after scaling.
+
+---
+
+## 🎯 Outcome
+
+* Successfully **scaled numerical features** for better model performance.
+* Visualized relationships between `Appearances` and `Goals` before and after scaling.
+* Generated two **scaled datasets** ready for further ML modeling.
+
+---
+
