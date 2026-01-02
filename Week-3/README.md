@@ -2,12 +2,6 @@
 
 # 📅 Week 3 – Feature Engineering & Scaling
 
-Here’s a **ready-to-use README for Week 3**, formatted like your Week 2 style:
-
----
-
-# Week 3 – Exploratory Data Analysis (EDA)
-
 ## Objective
 
 The objective of Week 3 was to perform exploratory data analysis (EDA) to uncover patterns, trends, and relationships between player attributes and performance metrics in the English Premier League dataset.
