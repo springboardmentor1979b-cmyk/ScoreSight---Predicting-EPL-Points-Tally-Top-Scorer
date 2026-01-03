@@ -1,131 +1,137 @@
-📘 Week 5 – Model Training & Evaluation
-📌 Overview
 
-In Week 5, the objective was to apply basic Machine Learning algorithms on the pre-processed English Premier League (EPL) player dataset.
-The dataset used in this week was already cleaned, encoded, and scaled in previous weeks.
+
+# 📘 Week 5 – Model Training & Evaluation
+
+## 📌 Overview
+
+In **Week 5**, the goal was to apply **basic Machine Learning algorithms** on the pre-processed **English Premier League (EPL) player dataset**.
+The dataset used this week was already **cleaned, encoded, and scaled** in the previous weeks.
 
 Two types of models were built:
 
-Regression Model – to predict the number of goals scored by a player
+* **Regression Model** – to predict the number of goals scored by a player
+* **Classification Model** – to predict the match result (**Win / Draw / Loss**)
 
-Classification Model – to predict the match result (Win / Draw / Loss)
+This week focused on understanding how **machine learning models are trained, tested, evaluated, and visualized**.
 
-This week helps in understanding how machine learning models are trained, tested, evaluated, and visualized.
+---
 
-📌 Dataset is loaded from:
+## 📌 Dataset
 
-../Week-4_Feature_Scaling/minmax_scaled_epl.csv
+* **Location:** `../Week-4_Feature_Scaling/minmax_scaled_epl.csv`
+* **Dataset Name:** EPL Players Dataset
+* **Source:** Google Drive (provided during internship)
 
-📊 Dataset Used
+### **Preprocessing Status**
 
-Dataset Name: EPL Players Dataset
+* Missing values handled
+* Categorical variables encoded
+* Numerical features scaled using **Min-Max Scaling**
 
-Source: Google Drive (provided during internship)
+---
 
-Preprocessing Status:
+## 🔹 Part 1: Regression Model (Goals Prediction)
 
-Missing values handled
+### 🧠 Problem Statement
 
-Categorical variables encoded
+Predict the **number of goals** scored by a player based on:
 
-Numerical features scaled using Min-Max Scaling
+* **Appearances**
+* **Shots**
+* **Passes**
+* **Assists**
 
+### 🔧 Steps Followed
 
-🔹 Part 1: Regression Model (Goals Prediction)
-🧠 Problem Statement
+1. **Feature Selection**
 
-Predict the number of goals scored by a player based on:
+   * **X (features):** `['Appearances', 'Shots', 'Passes', 'Assists']`
+   * **y (target):** `'Goals'`
 
-Appearances
+2. **Train-Test Split**
 
-Shots
+   * 80% data → Training
+   * 20% data → Testing
 
-Passes
+3. **Model Used**
 
-Assists
+   * **Linear Regression**
 
-🔧 Steps Followed
-1️⃣ Feature Selection
-X = ['Appearances', 'Shots', 'Passes', 'Assists']
-y = 'Goals'
+4. **Evaluation Metrics**
 
-2️⃣ Train-Test Split
+   * **Mean Absolute Error (MAE)**
+   * **Root Mean Squared Error (RMSE)**
+   * **R² Score**
 
-80% data → Training
+### 📈 Visualization
 
-20% data → Testing
+* Scatter plot of **Actual Goals vs Predicted Goals**
+* Helps understand how well the model is performing
 
-3️⃣ Model Used
+---
 
-Linear Regression
+## 🔹 Part 2: Classification Model (Match Outcome Prediction)
 
-4️⃣ Evaluation Metrics
+### 🧠 Problem Statement
 
-Mean Absolute Error (MAE)
+Classify the **match outcome** based on player statistics.
 
-Root Mean Squared Error (RMSE)
+**Match Result Labels:**
 
-R² Score
+* 0 → Loss
+* 1 → Draw
+* 2 → Win
 
-📈 Visualization
+### 🔧 Steps Followed
 
-Scatter plot of Actual Goals vs Predicted Goals
+1. **Created a New Target Column**
 
-Helps in understanding how well the model is performing
+   * `Match_Result` based on Wins and Losses
 
+2. **Feature Selection**
 
-🔹 Part 2: Classification Model (Match Outcome Prediction)
-🧠 Problem Statement
+   * **X (features):** `['Shots', 'Passes', 'Assists']`
+   * **y (target):** `Match_Result`
 
-Classify the match outcome based on player statistics.
+3. **Model Used**
 
-Match Result Labels:
+   * **Logistic Regression**
 
-0 → Loss
+4. **Evaluation Metric**
 
-1 → Draw
+   * **Accuracy Score**
 
-2 → Win
+### 📊 Visualization
 
-🔧 Steps Followed
-1️⃣ Created a New Target Column
-Match_Result
+* **Confusion Matrix**
+* Shows how many predictions were correct or incorrect for each class
 
+---
 
-Based on Wins and Losses.
+## 🧪 Model Results Summary
 
-2️⃣ Feature Selection
-X = ['Shots', 'Passes', 'Assists']
-y = 'Match_Result'
+| Model Type     | Algorithm           | Evaluation Metrics         |
+| -------------- | ------------------- | -------------------------- |
+| Regression     | Linear Regression   | MAE, RMSE, R²              |
+| Classification | Logistic Regression | Accuracy, Confusion Matrix |
 
-3️⃣ Model Used
+---
 
-Logistic Regression
+## 🛠 Libraries Used
 
-4️⃣ Evaluation Metric
+* **pandas**
+* **matplotlib**
+* **scikit-learn**
 
-Accuracy Score
+---
 
-📊 Visualization
+## ✅ Conclusion
 
-Confusion Matrix
+Week 5 successfully demonstrated the **practical implementation of machine learning models** using real-world sports data.
 
-Shows how many predictions were correct or incorrect for each class
+* The **trained models provided reasonable predictions**.
+* This week helped in understanding the **complete model training workflow** from feature selection to evaluation and visualization.
 
-🧪 Model Results Summary
-Model Type	Algorithm	Evaluation
-Regression	Linear Regression	MAE, RMSE, R²
-Classification	Logistic Regression	Accuracy, Confusion Matrix
-🛠 Libraries Used
+---
 
-pandas
-
-matplotlib
-
-scikit-learn
-
-
-✅ Conclusion
-
-Week 5 successfully demonstrated the practical implementation of machine learning models using real-world sports data.
-The trained models provided reasonable predictions and helped in understanding the complete model training workflow.
+Do you want me to do that?
