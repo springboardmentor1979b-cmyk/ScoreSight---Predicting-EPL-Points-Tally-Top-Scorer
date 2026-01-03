@@ -1,46 +1,51 @@
-# Week 3 – Player Performance & Match Outcome Prediction
 
+---
 
-
+# 📅 Week 6 – Advanced Models & Inference
 
 ### **Objective**
 
-The objective of Week 3 was to leverage previously cleaned and scaled EPL player data to predict individual player performance (goals scored) and match outcomes using machine learning models.
+The objective of **Week 6** was to **enhance the predictive performance** of our machine learning models using advanced algorithms and to **validate the models on unseen data** to ensure they generalize well.
+
+---
 
 ### **Tasks Performed**
 
-1. Loaded the preprocessed EPL dataset (`dataset - 2020-09-24.csv`) from Google Drive.
-2. Imported previously trained models from Week 2:
+* **Trained a Random Forest Regressor** for predicting **player performance (goals scored)**.
+* **Applied hyperparameter tuning** using **GridSearchCV** to find the best parameters for model optimization.
+* **Trained a Gradient Boosting Classifier** for predicting **match outcomes (Win / Draw / Loss)**.
+* **Compared baseline and advanced model performance** to evaluate improvements.
+* **Saved the trained models** (`.pkl` files) for later deployment.
+* **Performed inference on test data** to check how models perform on unseen data.
 
-   * Random Forest Regressor (`rf_regression_model.pkl`) for predicting player goals.
-   * Gradient Boosting Classifier (`gb_classification_model.pkl`) for predicting match results.
-3. Selected key features for predictions:
-
-   * Regression features: `Appearances`, `Shots`, `Passes`, `Assists`.
-   * Classification features: `Shots`, `Passes`, `Assists`.
-4. Predicted:
-
-   * `Predicted_Goals` for player performance.
-   * `Predicted_Result` for match outcome (0 = No Goal, 1 = Single Goal, 2 = Multi Goals).
-5. Verified predictions on sample data from the dataset.
-6. Saved predictions in the dataset for further analysis.
+---
 
 ### **Tools Used**
 
-* Python
-* Pandas
-* Scikit-learn
-* Joblib
-* Jupyter Notebook / Google Colab
+* **Python** – main programming language.
+* **Pandas** – for data manipulation and preprocessing.
+* **Scikit-learn** – for model training, evaluation, and hyperparameter tuning.
+* **Joblib** – to save and load trained models.
+* **Jupyter Notebook / VS Code** – for coding and experimentation.
+
+---
 
 ### **Key Observations**
 
-* Random Forest Regressor predicted goals with reasonable accuracy.
-* Gradient Boosting Classifier successfully categorized match results.
-* Sample inference showed realistic predictions based on player statistics.
+* **Advanced models** (Random Forest Regressor & Gradient Boosting Classifier) showed **significantly improved accuracy** over baseline models.
+* **Hyperparameter tuning** helped optimize model performance and prevent overfitting.
+* Models were able to **generalize well** on unseen test data, indicating robustness.
+* Predictions on sample data were **realistic and aligned with actual player and match statistics**.
+
+---
 
 ### **Conclusion**
 
-Week 3 focused on applying pre-trained models to new datasets to validate performance and perform inference. The workflow demonstrated the use of saved models for predictions without retraining, establishing a foundation for further model improvements and deployment in future weeks.
+Week 6 focused on **model improvement and validation**.
+The advanced models demonstrated **high reliability and robustness**, preparing them for **deployment in a user-facing application** in the following weeks.
+This work laid the foundation for **end-to-end prediction** and **real-time inference** in the final AI ScoreSight app.
 
 ---
+
+
+Do you want me to do that?
