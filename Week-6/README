@@ -1,5 +1,3 @@
-
-
 # Week 3 – Player Performance & Match Outcome Prediction
 
 
@@ -46,4 +44,3 @@ The objective of Week 3 was to leverage previously cleaned and scaled EPL player
 Week 3 focused on applying pre-trained models to new datasets to validate performance and perform inference. The workflow demonstrated the use of saved models for predictions without retraining, establishing a foundation for further model improvements and deployment in future weeks.
 
 ---
-
