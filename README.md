@@ -45,6 +45,61 @@ Scikit-learn – Model training and evaluation
 Joblib – Model serialization
 
 
+# Setup & Installation
+
+# Clone the repository
+
+git clone -b Tanisha-Bhowmik https://github.com/springboardmentor1979b-cmyk/ScoreSight---Predicting-EPL-Points-Tally-Top-Scorer.git
+cd ScoreSight---Predicting-EPL-Points-Tally-Top-Scorer/Week-7
+
+
+# Create a virtual environment
+
+python -m venv venv
+
+
+# Activate the virtual environment
+
+venv\Scripts\activate
+
+
+# Install dependencies
+
+pip install -r requirements.txt
+
+
+# Run the application
+
+streamlit run app.py
+
+
+# Usage
+
+Open the Streamlit interface in your browser (usually http://localhost:8501).
+
+
+# Navigate between tabs:
+
+Player Performance – Input player stats to predict goals.
+
+Match Outcome – Input match stats to predict Win/Draw/Loss.
+
+Predictions are displayed instantly along with informative metrics.
+
+# Screenshots
+
+Player Performance Tab
+
+Match Outcome Tab
+
+Prediction Results
+
+
+#  Conclusion
+
+The ScoreSight project successfully integrates machine learning models with a user-friendly interface, enabling real-time prediction of EPL player and match outcomes. It demonstrates the full workflow of a data science project, from preprocessing to model deployment.
+
+
 
 Streamlit – Web-based application interface
 
