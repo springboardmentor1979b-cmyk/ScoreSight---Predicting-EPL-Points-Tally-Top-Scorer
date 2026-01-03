@@ -90,4 +90,3 @@ The Week 7 application demonstrates **end-to-end integration of machine learning
 ---
 
 
-Do you want me to do that next?
