@@ -1,46 +1,44 @@
-#  🏆 Week 4 – EPL Player Stats Scaling & Visualization
+📅 Week 4 – EPL Player Stats Scaling & Visualization
+📂 Files Included
 
-# 📂 Files Included
-
-# 📄 dataset - 2020-09-24.csv
+dataset - 2020-09-24.csv
 Raw EPL player dataset stored in Google Drive
 
-# 📊 minmax_scaled_epl.csv
+📊 minmax_scaled_epl.csv
 Dataset scaled using Min-Max Scaler (range: 0–1)
 
-# 📈 standard_scaled_epl.csv
+📈 standard_scaled_epl.csv
 Dataset scaled using Standard Scaler (mean = 0, std = 1)
 
-# 🎯 Objectives
+🎯 Objectives
 
-🔹 Load the EPL player dataset from Google Drive
+Load the EPL player dataset from Google Drive
 
-🔹 Check and handle missing values in key numerical columns
-
-# Goals
+Check and handle missing values in key numerical columns:
 
 Appearances
 
 Passes
 
-🔹 Apply Min-Max Scaling to normalize feature ranges
+Apply Min-Max Scaling to normalize feature ranges
 
-🔹 Apply Standard Scaling to standardize features
+Apply Standard Scaling to standardize features
 
-🔹 Visualize relationships between Appearances and Goals
+Visualize relationships between Appearances and Goals:
 
 Before scaling
 
 After Min-Max scaling
 
 🛠️ Methods Used
-🔸 Min-Max Scaling
+
+Min-Max Scaling
 
 Scales features between 0 and 1
 
 Useful when features have different ranges
 
-🔸 Standard Scaling
+Standard Scaling
 
 Centers data around mean = 0
 
@@ -48,7 +46,7 @@ Scales data to unit variance
 
 Suitable for algorithms like Linear Regression, SVM, and KNN
 
-# 📊 Visualization
+📊 Visualization
 
 Scatter plots were created to observe the impact of scaling:
 
@@ -58,16 +56,19 @@ After Scaling: Normalized feature distribution
 
 These visualizations help verify that scaling preserves relationships while standardizing magnitudes.
 
-# ✅ Outcome
+✅ Outcome
 
-✔ Numerical features scaled successfully
-✔ Data distributions normalized and standardized
-✔ Visual confirmation of scaling effects
-✔ Scaled datasets ready for Week 5 – Model Building
+Numerical features scaled successfully
 
-# 🧰 Tools & Libraries
+Data distributions normalized and standardized
 
-Python 
+Visual confirmation of scaling effects
+
+Scaled datasets ready for Week 5 – Model Building
+
+🧰 Tools & Libraries
+
+Python
 
 Pandas
 
@@ -75,6 +76,6 @@ NumPy
 
 Matplotlib
 
-scikit-learn
+Scikit-learn
 
-Google Colab & Google Drive 
+Google Colab & Google Drive
