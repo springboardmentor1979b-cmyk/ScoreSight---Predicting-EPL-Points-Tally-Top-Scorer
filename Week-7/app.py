@@ -10,8 +10,9 @@ st.set_page_config(
 )
 
 # ---------------- Load Models ----------------
-rf_model = joblib.load("models/rf_regression_model.pkl")
-gb_model = joblib.load("models/gb_classification_model.pkl")
+rf_model = joblib.load("Week-7/models/rf_regression_model.pkl")
+gb_model = joblib.load("Week-7/models/gb_classification_model.pkl")
+
 
 # ---------------- Header ----------------
 st.markdown(
