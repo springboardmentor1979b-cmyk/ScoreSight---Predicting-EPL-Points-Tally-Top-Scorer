@@ -1,45 +1,90 @@
 
+
+# 📅 Week 7 – Full Application (GUI)
+
+## 🎯 Objective
+
+The objective of **Week 7** was to take the **trained machine learning models** from previous weeks and **deploy them into a user-friendly application** that allows **real-time predictions** for English Premier League (EPL) player performance and match outcomes.
+
+The goal was to create a **complete end-to-end system**, from data to model predictions, accessible through a simple **graphical interface**.
+
 ---
 
-# Week 7 – Full Application (GUI)
+## ⚡ Application Features
 
-## Objective
+1. **Player Performance Prediction (Goals)**
 
-The objective of Week 7 was to deploy the trained machine learning models into a **user-friendly application** that allows **real-time predictions** for English Premier League (EPL) players and matches.
+   * Predict the expected number of goals a player will score.
+   * Uses key player statistics such as **Appearances, Shots, Passes, and Assists**.
+   * Instant feedback displayed in the interface.
 
-## Application Features
+2. **Match Outcome Prediction (Win / Draw / Loss)**
 
-* **Player Performance Prediction (Goals)**: Predict the expected number of goals a player will score based on match statistics.
-* **Match Outcome Prediction (Win / Draw / Loss)**: Predict the outcome of a match using key match statistics.
-* **Interactive GUI**: Provides an easy-to-use interface built with **Streamlit** for instant predictions.
+   * Predict the result of a match based on match-level statistics.
+   * Uses features like **Shots, Passes, and Assists** to estimate **Win, Draw, or Loss**.
 
-## Tools Used
+3. **Interactive GUI with Streamlit**
 
-* Python
-* Streamlit
-* Scikit-learn
-* Joblib
-* VS Code
+   * Easy-to-use interface for real-time predictions.
+   * Separate tabs for **Player Performance** and **Match Outcome**.
+   * Expandable sections explain the **model logic and guidance** to users.
+   * Metrics and results are displayed clearly with **visual feedback** (success, warning, error).
 
-## Implementation Details
+---
 
-* Pre-trained machine learning models are stored as `.pkl` files in the `models/` folder.
-* User inputs for player and match statistics are collected via the Streamlit interface.
-* Predictions are calculated using the loaded models and displayed instantly on the application interface.
-* The interface includes two main tabs:
+## 🛠 Tools Used
 
-  1. **Player Performance** – Predict player goals.
-  2. **Match Outcome** – Predict match results (Win, Draw, Loss).
-* Additional information and model details are accessible through expandable sections for user guidance.
+* **Python** – Core programming language
+* **Streamlit** – For building the interactive GUI
+* **Scikit-learn** – For machine learning models
+* **Joblib** – To save and load trained models
+* **VS Code** – Code editing and application development environment
 
-## Screenshots
+---
 
-Screenshots of the working application are available in the `screenshots/` folder.
+## 📝 Implementation Details
 
-* Player Performance Tab
-* Match Outcome Tab
+* **Models Loading**:
 
-## Conclusion
+  * Pre-trained models are stored as `.pkl` files in the `models/` folder.
+  * **Random Forest Regressor** for player goal prediction.
+  * **Gradient Boosting Classifier** for match outcome prediction.
 
-The Week 7 application successfully integrates machine learning models into an **interactive, real-time interface**, completing the **end-to-end AI ScoreSight system** for EPL analytics.
+* **User Input**:
+
+  * Users enter player or match statistics directly into the GUI.
+  * Input fields include numeric values like **Appearances, Shots, Passes, and Assists**.
+
+* **Predictions**:
+
+  * The models compute predictions in real-time.
+  * Results are displayed instantly in a **clear and readable format**.
+
+* **Application Layout**:
+
+  * **Tabs** separate the two main functionalities:
+
+    1. **Player Performance** – Predict goals.
+    2. **Match Outcome** – Predict match result (Win/Draw/Loss).
+  * **Expandable sections** provide model information, helping users understand how predictions are made.
+
+---
+
+## 🖼 Screenshots
+
+Screenshots of the working application are available in the `screenshots/` folder:
+
+* **Player Performance Tab** – Shows predicted goals for a player.
+* **Match Outcome Tab** – Shows predicted result for a match.
+
+---
+
+## ✅ Conclusion
+
+The Week 7 application demonstrates **end-to-end integration of machine learning models** into an interactive GUI.
+
+* Users can now **predict player performance and match outcomes in real-time**.
+* The interface is **user-friendly, intuitive, and visually informative**.
+* This completes the **AI ScoreSight system**, combining data, machine learning, and application deployment for EPL analytics.
+
 
