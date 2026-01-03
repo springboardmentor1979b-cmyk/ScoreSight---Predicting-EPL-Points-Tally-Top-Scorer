@@ -1,26 +1,23 @@
-🏆 Week 4 – EPL Player Stats Scaling & Visualization
+#  🏆 Week 4 – EPL Player Stats Scaling & Visualization
 
-📂 Files Included
+# 📂 Files Included
 
-📄 dataset - 2020-09-24.csv
+# 📄 dataset - 2020-09-24.csv
 Raw EPL player dataset stored in Google Drive
 
-📊 minmax_scaled_epl.csv
+# 📊 minmax_scaled_epl.csv
 Dataset scaled using Min-Max Scaler (range: 0–1)
 
-📈 standard_scaled_epl.csv
+# 📈 standard_scaled_epl.csv
 Dataset scaled using Standard Scaler (mean = 0, std = 1)
 
-📓 week3_scaling.ipynb
-Jupyter/Google Colab notebook containing preprocessing, scaling, and visualizations
-
-🎯 Objectives
+# 🎯 Objectives
 
 🔹 Load the EPL player dataset from Google Drive
 
 🔹 Check and handle missing values in key numerical columns
 
-Goals
+# Goals
 
 Appearances
 
@@ -51,7 +48,7 @@ Scales data to unit variance
 
 Suitable for algorithms like Linear Regression, SVM, and KNN
 
-📊 Visualization
+# 📊 Visualization
 
 Scatter plots were created to observe the impact of scaling:
 
@@ -61,16 +58,16 @@ After Scaling: Normalized feature distribution
 
 These visualizations help verify that scaling preserves relationships while standardizing magnitudes.
 
-✅ Outcome
+# ✅ Outcome
 
 ✔ Numerical features scaled successfully
 ✔ Data distributions normalized and standardized
 ✔ Visual confirmation of scaling effects
 ✔ Scaled datasets ready for Week 5 – Model Building
 
-🧰 Tools & Libraries
+# 🧰 Tools & Libraries
 
-Python 🐍
+Python 
 
 Pandas
 
@@ -80,4 +77,4 @@ Matplotlib
 
 scikit-learn
 
-Google Colab & Google Drive ☁️
+Google Colab & Google Drive 
