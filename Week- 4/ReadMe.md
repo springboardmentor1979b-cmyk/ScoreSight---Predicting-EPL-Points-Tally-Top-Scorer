@@ -79,4 +79,3 @@ The main objectives of Week 4 were to **prepare the EPL player dataset for model
 * **Google Colab & Google Drive**
 
 
-Do you want me to do that next?
