@@ -167,7 +167,7 @@ It supports two predictive tasks:
 
 📸 **Screenshot — App Layout**
 
-![App Layout](screenshots/app_layout.png)
+![App Layout](screenshots/match_outcome_prediction_page.png)
 
 ---
 
@@ -205,10 +205,8 @@ It supports two predictive tasks:
 - Qualitative label (Poor → Elite)
 - Progress bar visualization
 
-📸 **Screenshots**
+📸 **Screenshot - Player Performance Prediction**
 
-![Application Interface](screenshots/match_outcome_prediction_page.png)
-![Match Outcome Prediction](screenshots/match_outcome_prediction.png)
 ![Player Performance Prediction](screenshots/player_performance_prediction.png)
 
 ---
